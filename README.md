@@ -50,3 +50,8 @@ M V Virajit  |  ML Developer
 
 ## Model Architecture
 ![markdown logo](flask-server/static/images/architecture.png)
+
+
+## Output
+![markdown logo](flask-server/static/images/output1.png)
+![markdown logo](flask-server/static/images/output2.png)
