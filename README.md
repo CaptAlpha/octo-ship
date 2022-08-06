@@ -17,7 +17,9 @@ M V Virajit  |  ML Developer
 
 ##  Overview of the Project
 
->An application that will check for vessels present in an image.
+>Our application allows the drone user to detect, identify and classify the type of water vessels such as Cruise ship, Military Ship etc. 
+>Our algorithm works with the help of Transfer Learning and uses Xception model to identify and classify the type of ships. Our software allows the drones to identify the vessels in the sunlight as well as in absence of light using image processing techniques such dilation and median blur
+
 ##  Significance of the Project
 
 * Helps to accurately detect different type of vessels (Cargo, Tankers, Military, Carrier, Cruise)
@@ -35,9 +37,12 @@ M V Virajit  |  ML Developer
 * Javascript
 * Flask
 
+## How is the problem solved??
+![markdown logo](flask-server/static/images/5.png)
+
+
 ##  Description
 
 * Our application allows the drone user to detect, identify and classify the type of water vessels such as Cruise ship, Military Ship etc. 
 * Our algorithm works with the help of Transfer Learning and uses Xception model to identify and classify the type of ships.
-* Our software allows the drones to identify the vessels in the sunlight as well as in absence of light using image processing techniques such as 
-dilation and median blur
+* Our software allows the drones to identify the vessels in the sunlight as well as in absence of light using image processing techniques such as dilation and median blur
