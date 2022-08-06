@@ -1,0 +1,37 @@
+body 
+{
+   background-image: url("static/images/background.jpg");
+}
+.page1 {
+ font-family: 'Poppins', sans-serif;
+ color: rgb(255, 244, 250);
+}
+.page1 h1 {
+    margin-top: 3%;
+    margin-left: 2%;
+    font-weight:bolder;
+    font-size: 100px;
+}
+.page1 h4{
+    margin-top: 6%;
+    margin-left: 9%;
+    font-size: 25px;
+}
+
+.page1 p {
+    margin-left: 9%;
+    font-size: 40px;
+    width: 65%;
+}
+
+.button1 {
+    margin-left: 33%;
+    border-radius: 25px;
+    background-color: yellow;
+    width: 20%;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    border-color:transparent;
+    cursor:pointer;
+}
