@@ -5,6 +5,8 @@ Public Repo For Cognition
 
 Project Presented by TEAM : Octo-Ship
 
+![markdown logo](flask-server/static/images/logo.png)
+
 # Our Team
 Member | Role
 ------------- | -------------
