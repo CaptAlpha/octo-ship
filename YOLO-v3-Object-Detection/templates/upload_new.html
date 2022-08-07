@@ -23,7 +23,6 @@
                         <button class="button1">Upload Video</button>
                    </div>
             </div>
-            
                 <div class="split left box">
                     <div class="centered">
                         <label for="file-upload" class="custom-file-upload">
@@ -40,17 +39,35 @@
     <style>
 body 
 {
-   background-image: url("static/background.jpg");
+   background-image: url("../static/background.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 .diversion
 {
  display: flex;
  flex-direction: row;
   align-items:center;
-  align-content: center;
+ 
   gap: 120px;
   justify-content: center;
-  margin-top: 15%;
+  margin-top: 8%;
+  
+}
+.split  {
+    border: solid;
+    border-color: black;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: blueviolet;
+}
+.centered {
+    margin-left: 23%;
+}
+.custom-file-upload
+{
+    margin-left: 10%;
+    font-size: 40px;
 }
 .page1 {
  font-family: 'Poppins', sans-serif;
@@ -77,7 +94,7 @@ body
 .button1 {
     margin-left: 10%;
     border-radius: 25px;
-    background-color: yellow;
+    background-color: #5DF6AE;
     
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
