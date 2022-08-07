@@ -13,6 +13,7 @@ def detectObj(image_path):
 
     np.random.seed(10)
     COLORS = np.random.randint(0, 255, size=(len(labels), 3), dtype="uint8")
+    COLORS[8] = [0, 0, 255]
 
     net = cv2.dnn.readNetFromDarknet(modelConfiguration, modelWeights)
 
@@ -69,9 +70,13 @@ def detectObj(image_path):
                 (w, h) = (boxes[i][2], boxes[i][3])
 
                 color = [int(c) for c in COLORS[classIDs[i]]]
-                cv2.rectangle(frame, (x, y), (x + w, y + h), color, 2)
+                # cv2.rectangle(frame, (x, y), (x + w, y + h), color, 2)
                 text = '{}: {:.4f}'.format(labels[classIDs[i]], confidences[i])
-                cv2.putText(frame, text, (x, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
+                # cv2.putText(frame, text, (x, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
+
+                if 'boat' in text:
+                    cv2.rectangle(frame, (x, y), (x + w, y + h), color, 2)
+                    cv2.putText(frame, text, (x, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
 
                 if writer is None:
                     fourcc = cv2.VideoWriter_fourcc(*'MJPG')
